@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Input Number<br/><br/>
+a: <input type="text" id="a" name="a"/><br/><br/>
+b: <input type="text" id="b" name="b"/><br/><br/>
+c: <input type="text" id="c" name="c"/><br/><br/>
+<br/>
+<input type="button" value="check greatest" onclick="check()"/>
+<script>
+
+function check()
+{
+var a, b, c;
+a = parseInt(document.getElementById("a").value);
+b = parseInt(document.getElementById("b").value);
+c = parseInt(document.getElementById("c").value);
+if (a>b && b>c)
+{
+alert("a is greatest");
+}
+else if (b>a && b>c)
+{
+alert("b is greatest");}
+
+else{
+
+alert("c is greatest");
+}
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<body>
+<h2> JavaScript Variabales</h2>
+
+Number 1: <input type="text" id="n1" name="n1"/>
+<br/> + <br/>
+
+
+Number 2: <input type="text" id="n2" name="n2"/>
+<br/>
+
+<p id="ans"></p>
+<input type="button" value="add" onclick="add()"/>
+<input type="button" value="Sub" onclick="Sub()"/>
+<input type="button" value="Mult" onclick="Multi()"/>
+<input type="button" value="Div" onclick="Div()"/>
+
+<script>
+
+<script>
+var a,b, result;
+
+function add()
+{
+
+     a = parseInt(document.getElementById("n1").value);
+     b = parseInt(document.getElementById("n2").value);
+     result = a + b;
+     document.getElementById("ans").innerHTML = "<h3>" + result + "</h3>";
+    
+}
+
+
+function Sub()
+{
+
+     a = parseInt(document.getElementById("n1").value);
+     b = parseInt(document.getElementById("n2").value);
+     result = a - b;
+     document.getElementById("ans").innerHTML = "<h3>" + result + "</h3>";
+     
+}
+
+
+function Multi()
+{
+
+     a = parseInt(document.getElementById("n1").value);
+     b = parseInt(document.getElementById("n2").value);
+     result = a * b;
+     document.getElementById("ans").innerHTML = "<h3>" + result + "</h3>";
+     
+}
+
+
+function Div()
+{
+
+     a = parseInt(document.getElementById("n1").value);
+     b = parseInt(document.getElementById("n2").value);
+     result = a / b;
+     document.getElementById("ans").innerHTML = "<h3>" + result + "</h3>";
+     
+}
+</script>
+</html>
+</body>
+      
